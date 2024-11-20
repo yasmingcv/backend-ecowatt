@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "simulations",
+  "info": {
+    "singularName": "simulation",
+    "pluralName": "simulations",
+    "displayName": "simulation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalUse": {
+      "type": "string"
+    },
+    "carbonEmitted": {
+      "type": "string"
+    },
+    "renewableEnergy": {
+      "type": "string"
+    },
+    "renewableEnergySource": {
+      "type": "string"
+    },
+    "peakDemandReduction": {
+      "type": "string"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    }
+  }
+}
